@@ -517,6 +517,10 @@ label {
   flex-direction: column;
   box-sizing: border-box;
 }
+.about_container section {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
 
 .round_portrait {
   width: 100%;
@@ -530,6 +534,10 @@ label {
 .meet_container {
   width: 100%;
   display: flex;
+}
+.meet_container .worker {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 .worker {
