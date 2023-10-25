@@ -15,6 +15,8 @@ body h1 {
   margin: 0px 18px 0px 0px;
   width: 80%;
   letter-spacing: 0.45rem;
+  -webkit-backdrop-filter: 10px;
+          backdrop-filter: 10px;
 }
 body h2, body h3, body h4 {
   font-family: "Righteous", sans-serif;
@@ -102,17 +104,18 @@ body .header-om_oss {
   }
 }
 body .header-produkter {
-  background-image: url("bilder/killar-med-boll.jpg");
-  background-size: auto;
+  background-image: url("bilder/barn-i-rullstol.jpg");
+  background-size: cover;
 }
 @media (min-width: 612px) {
   body .header-produkter {
-    background-position: center top -150px;
+    background-size: auto;
+    background-position: center top -250px;
   }
 }
 body .header-recensioner {
   background-image: url("bilder/ahmed-zayan-ABUWC-0a7_A-unsplash.jpeg");
-  background-position: right 30% bottom;
+  background-position: left bottom;
   background-size: cover;
 }
 @media (min-width: 612px) {
@@ -132,7 +135,7 @@ body main section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 4vh 0 4vh 0;
+  margin: 20px 0 20px 0;
 }
 body main .index-section, body main .index-section-text {
   align-items: center;
@@ -649,7 +652,7 @@ li a.active {
 /* hover för desktopnav*/
 .desktop-menu li:hover a {
   text-decoration: none;
-  color: #FC976C;
+  color: #7B5C9A;
 }
 
 /*media queries för nav, ska in med resten*/

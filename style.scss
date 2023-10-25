@@ -121,16 +121,17 @@ body{
       }
   
       .header-produkter {
-          background-image: url("bilder/killar-med-boll.jpg");
-          background-size: auto;
+          background-image: url("bilder/barn-i-rullstol.jpg");
+          background-size: cover;
           @media (min-width: 612px){
-            background-position: center top -150px;
+            background-size: auto;
+            background-position: center top -250px;
           }
       }
       
       .header-recensioner {
         background-image: url("bilder/ahmed-zayan-ABUWC-0a7_A-unsplash.jpeg");
-        background-position: right 30% bottom;
+        background-position: left bottom;
         background-size: cover;
         @media (min-width: 612px){
             background-position: center;
