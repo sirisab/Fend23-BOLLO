@@ -73,6 +73,7 @@ body header button {
   margin-left: 0%;
   background-image: none;
   background-color: white;
+  color: #3C3C3C;
 }
 body .header-index {
   background-image: url("bilder/boll_design_2.png");
