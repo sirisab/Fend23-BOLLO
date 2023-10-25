@@ -44,7 +44,7 @@ body a:hover {
 body button, body input[type=submit] {
   padding: 4% 5%;
   border-radius: 5px;
-  margin: 18px 0 18px 0;
+  margin: 15px 0 22px 0;
   background-image: linear-gradient(#a094cb, #7B5C9A);
   color: white;
   border: none;
@@ -80,7 +80,7 @@ body .header-index {
 }
 body .header-kontakt {
   background-image: url("bilder/allef-vinicius-bJwUKoPH29s-unsplash.jpg");
-  background-position: top -50px;
+  background-position: -50px top;
   background-size: cover;
 }
 @media (min-width: 612px) {
@@ -97,16 +97,23 @@ body .header-om_oss {
 }
 @media (min-width: 612px) {
   body .header-om_oss {
-    background-image: url("bilder/jacob-mejicanos-qyUFVIP3fwk-unsplash.jpg");
-    background-position: center top -150px;
+    background-position: center top -500px;
+    background-size: auto;
   }
 }
 body .header-produkter {
-  background-image: url("bilder/stainless-images-RUgbGfdma6U-unsplash.jpg");
+  background-image: url("bilder/barn-i-rullstol.jpg");
+  background-size: cover;
+}
+@media (min-width: 612px) {
+  body .header-produkter {
+    background-size: auto;
+    background-position: center top -250px;
+  }
 }
 body .header-recensioner {
   background-image: url("bilder/ahmed-zayan-ABUWC-0a7_A-unsplash.jpeg");
-  background-position: right 30% bottom;
+  background-position: left bottom;
   background-size: cover;
 }
 @media (min-width: 612px) {
@@ -122,11 +129,14 @@ body main .main-image {
   width: 100%;
   border-radius: 6px;
 }
+body main p {
+  margin-bottom: 3px;
+}
 body main section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 4vh 0 4vh 0;
+  margin: 30px 0 30px 0;
 }
 body main .index-section, body main .index-section-text {
   align-items: center;
@@ -180,6 +190,9 @@ body footer .copyright {
   text-align: center;
   line-height: 21px;
 }
+body footer .copyright .footer-logga {
+  width: 50px;
+}
 
 @media (min-width: 612px) {
   body h1 {
@@ -203,7 +216,7 @@ body footer .copyright {
     display: none;
   }
   body main {
-    margin-bottom: 10vh;
+    margin-bottom: 8vh;
     width: 68%;
   }
   body main p {
@@ -221,7 +234,7 @@ body footer .copyright {
     text-decoration: underline;
   }
   body main section {
-    margin: 10vh 0vh 10vh 0vh;
+    margin: 30px 0 30px 0;
   }
   body main section.index-section {
     display: flex;
@@ -229,8 +242,8 @@ body footer .copyright {
     align-items: center;
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: 15vh;
-    margin-bottom: 15vh;
+    margin-top: 13vh;
+    margin-bottom: 13vh;
   }
   body main section.index-section h2 {
     margin: 0px;
@@ -304,6 +317,9 @@ body footer .copyright {
     width: 300px;
     margin: auto;
     padding-top: 40px;
+  }
+  body footer .footer-wrapper .copyright .footer-logga {
+    width: 50px;
   }
 }
 #product-section {
@@ -508,6 +524,10 @@ label {
   flex-direction: column;
   box-sizing: border-box;
 }
+.about_container section {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
 
 .round_portrait {
   width: 100%;
@@ -521,6 +541,10 @@ label {
 .meet_container {
   width: 100%;
   display: flex;
+}
+.meet_container .worker {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 .worker {
@@ -596,13 +620,13 @@ label {
 
 .mobile-dropdown {
   list-style: none;
-  background-color: #fff;
+  background-color: #E3DEF7;
   position: absolute;
-  top: 60px;
+  top: 71px;
   right: 0;
   width: 150px;
   display: none;
-  border: 1px solid lightgrey;
+  border: 1px solid #D9D9D9;
 }
 .mobile-dropdown a {
   text-decoration: none;
@@ -643,7 +667,7 @@ li a.active {
 /* hover för desktopnav*/
 .desktop-menu li:hover a {
   text-decoration: none;
-  color: #FC976C;
+  color: #7B5C9A;
 }
 
 /*media queries för nav, ska in med resten*/

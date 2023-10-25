@@ -7,7 +7,7 @@ body{
     width:100vw;
     margin: 0px;
     @include flex-column();
-    
+     
      
     // Har organiserat så att sådant som gäller hela sidan och återkommande element tex textstyling och knappar kommer först här, och det som rör specifika sektioner samt layout kommer efteråt. Media queries för desktop längst ner. /SL
     
@@ -20,7 +20,6 @@ body{
         margin: 0px 18px 0px 0px;
         width: 80%;
         letter-spacing: 0.45rem;
-        backdrop-filter: (10px);
         }
 
     h2, h3, h4 {
@@ -59,7 +58,7 @@ body{
     button, input[type=submit]  {
         padding: 4% 5%;
         border-radius: 5px;
-        margin: 18px 0 18px 0;
+        margin: 15px 0 22px 0;
         background-image: linear-gradient( #a094cb , $myDarkPurple);
         color: white;
         border: none;
@@ -99,7 +98,7 @@ body{
   
       .header-kontakt {
           background-image: url("bilder/allef-vinicius-bJwUKoPH29s-unsplash.jpg");
-          background-position: top -50px;
+          background-position: -50px top;
           background-size: cover;
 
           @media (min-width: 612px){
@@ -115,18 +114,23 @@ body{
           background-position: left -15px bottom;
           background-size: cover;
           @media (min-width: 612px){
-            background-image: url("bilder/jacob-mejicanos-qyUFVIP3fwk-unsplash.jpg");
-            background-position: center top -150px;
+            background-position: center top -500px;
+            background-size:auto;
           }
       }
   
       .header-produkter {
-          background-image: url("bilder/stainless-images-RUgbGfdma6U-unsplash.jpg");
+          background-image: url("bilder/barn-i-rullstol.jpg");
+          background-size: cover;
+          @media (min-width: 612px){
+            background-size: auto;
+            background-position: center top -250px;
+          }
       }
       
       .header-recensioner {
         background-image: url("bilder/ahmed-zayan-ABUWC-0a7_A-unsplash.jpeg");
-        background-position: right 30% bottom;
+        background-position: left bottom;
         background-size: cover;
         @media (min-width: 612px){
             background-position: center;
@@ -141,10 +145,14 @@ body{
               width: 100%;
               border-radius: 6px;
           }
+
+          p{
+            margin-bottom: 3px;
+          }
           
           section{
               @include flex-column;
-              margin: 20px 0 20px 0;
+              margin: 30px 0 30px 0;
 
           }
           
@@ -201,6 +209,10 @@ body{
         .copyright {
             text-align:center;
             line-height: 21px;
+
+            .footer-logga{
+                width: 50px;
+            }
         }
         
     } //här slutar footern
@@ -238,9 +250,9 @@ body{
         }
   
         main{
-        margin-bottom: 10vh;
+        margin-bottom: 8vh;
         width: 68%;
-
+ 
         p{
             font-size: 17px;
             margin: 20px 0 20px 0;
@@ -258,15 +270,15 @@ body{
         }
 
         section{
-            margin: 10vh 0vh 10vh 0vh;
+            margin: 30px 0 30px 0;
         }
 
         section.index-section{
             @include flex-row();
             justify-content: space-between;
             align-items: flex-start;
-            margin-top: 15vh;
-            margin-bottom: 15vh;
+            margin-top: 13vh;
+            margin-bottom: 13vh;
 
             h2 {
                 margin:0px;
@@ -351,17 +363,17 @@ body{
                 width: 300px;
                 margin: auto;
                 padding-top: 40px;
+
+                .footer-logga{
+                    width: 50px;
+                }
               }
+
 
             }
           }
         
     }
-
-            
-            //footer
-
-
     }
 
 @import "./_produkter.scss";
