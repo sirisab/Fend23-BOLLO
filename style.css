@@ -15,8 +15,6 @@ body h1 {
   margin: 0px 18px 0px 0px;
   width: 80%;
   letter-spacing: 0.45rem;
-  -webkit-backdrop-filter: 10px;
-          backdrop-filter: 10px;
 }
 body h2, body h3, body h4 {
   font-family: "Righteous", sans-serif;
@@ -138,7 +136,7 @@ body main section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 4vh 0 4vh 0;
+  margin: 30px 0 30px 0;
 }
 body main .index-section, body main .index-section-text {
   align-items: center;
@@ -520,6 +518,10 @@ label {
   flex-direction: column;
   box-sizing: border-box;
 }
+.about_container section {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
 
 .round_portrait {
   width: 100%;
@@ -533,6 +535,10 @@ label {
 .meet_container {
   width: 100%;
   display: flex;
+}
+.meet_container .worker {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 .worker {
