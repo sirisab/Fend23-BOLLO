@@ -209,6 +209,10 @@ body{
         .copyright {
             text-align:center;
             line-height: 21px;
+
+            .footer-logga{
+                width: 50px;
+            }
         }
         
     } //här slutar footern
@@ -359,7 +363,12 @@ body{
                 width: 300px;
                 margin: auto;
                 padding-top: 40px;
+
+                .footer-logga{
+                    width: 50px;
+                }
               }
+
 
             }
           }
