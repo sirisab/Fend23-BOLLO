@@ -1,0 +1,369 @@
+//länka in partials
+@import "./_mixins_o_variabler.scss";
+//resten av partials ska ligga längst ner för att prioriteras
+  
+  
+body{
+    width:100vw;
+    margin: 0px;
+    @include flex-column();
+    
+    
+    // Har organiserat så att sådant som gäller hela sidan och återkommande element tex textstyling och knappar kommer först här, och det som rör specifika sektioner samt layout kommer efteråt. Media queries för desktop längst ner. /SL
+    
+    h1 {
+        font-family: 'Righteous', sans-serif;
+        color: white;
+        text-align: left;
+        text-shadow: rgba($color: #000000, $alpha: 0.7) 3px 4px 9px;
+        font-size: 35px;
+        margin: 0px 18px 0px 0px;
+        width: 80%;
+        letter-spacing: 0.45rem;
+        }
+
+    h2, h3, h4 {
+        font-family: 'Righteous', sans-serif;
+        color:$myTextColor;
+        letter-spacing: .1rem;
+    }
+
+      h4{
+        color:$myDarkPurple;
+        padding: 0px;
+        margin: 0px 0px 10px 0px;
+    }
+
+    //för centrerad heading
+    #long_h2{
+        text-align: center;
+    }
+
+    p, a , button, label {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: $myTextColor;
+        text-decoration: none;
+        font-size:15px;
+        
+    }
+
+    a {
+        font-weight: 550;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+
+    button, input[type=submit]  {
+        padding: 4% 5%;
+        border-radius: 5px;
+        margin: 18px 0 18px 0;
+        background-image: linear-gradient( #a094cb , $myDarkPurple);
+        color: white;
+        border: none;
+        box-shadow: 2px 3px 4px rgb(10, 10, 10, 0.3) ;
+        letter-spacing: .07rem;
+    }
+      
+    header {
+          width: 100%;
+          height: 60vh;
+          @include flex-column();
+          color:white;
+          justify-content: center;
+          align-items: flex-start;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+          background-repeat: no-repeat;
+          padding: 8%;
+          box-sizing: border-box;
+
+
+          .show-on-desktop{
+            display: none;
+          }
+
+          button {
+            padding: 1% 4%;
+            margin-left: 0%;
+            background-image: none;
+            background-color: white;
+          }
+      }
+  
+      .header-index {
+          background-image: url("bilder/boll_design_2.png");
+      }
+  
+      .header-kontakt {
+          background-image: url("bilder/baskethall.jpg");
+          background-position: bottom;
+          background-size: cover;
+
+          @media (min-width: 612px){
+            background-image: url("bilder/baskethall.jpg");
+            background-size: cover;
+            background-position: center bottom -50px;
+          }
+
+      }
+  
+      .header-om_oss {
+          background-image: url("bilder/jacob-mejicanos-qyUFVIP3fwk-unsplash.jpg");
+          background-position: left -15px bottom;
+          background-size: cover;
+          @media (min-width: 612px){
+            background-image: url("bilder/jacob-mejicanos-qyUFVIP3fwk-unsplash.jpg");
+            background-position: center top -150px;
+          }
+      }
+  
+      .header-produkter {
+          background-image: url("bilder/stainless-images-RUgbGfdma6U-unsplash.jpg");
+      }
+      
+      .header-recensioner {
+        background-image: url("bilder/ahmed-zayan-ABUWC-0a7_A-unsplash.jpeg");
+        background-position: right 30% bottom;
+        background-size: cover;
+        @media (min-width: 612px){
+            background-position: center;
+        }
+      }
+      
+      main {
+          width: 75%;
+          margin-bottom: 15%;
+          
+          .main-image{
+              width: 100%;
+              border-radius: 6px;
+          }
+          
+          section{
+              @include flex-column;
+              margin: 4vh 0 4vh 0;
+
+          }
+          
+          .index-section , .index-section-text{
+            align-items: center;
+          }
+
+          .index-section{
+            justify-content: center;
+          }
+        } //här slutar main
+  
+        .banner-image{
+            width:100vw;
+    }
+
+    footer { 
+        width: 100%;
+        background-color: #D9D9D9;
+        padding: 20px; 
+        @include flex-column;
+        justify-content: center;
+        box-sizing: border-box;
+        
+        .footer-socials-mobile {
+            @include flex-row;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            
+            .socials-image {
+                width: 50px;
+            }
+        }
+        .footer-socials-desktop {
+          display:none;
+        }
+  
+        //Wrapper för .footer-subpages och .footer-contact
+        
+        .subpages-contact-wrapper {
+            @include flex-row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            line-height: 21px;
+            
+            .footer-subpages {
+                @include flex-column;
+                align-items: flex-start;
+                flex-wrap: wrap;
+            }
+        } 
+        
+        .copyright {
+            text-align:center;
+            line-height: 21px;
+        }
+        
+    } //här slutar footern
+    
+  
+} //här slutar body
+  
+  
+//desktopversionen nedan
+@media (min-width: 612px) {
+    body{
+    
+        h1 {
+            width: 50%;
+            font-size: 3.2em;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            text-align: left;
+        }
+
+        header {
+        background-size: 100%;
+            .show-on-desktop{
+                 display: block;
+        }
+        }
+    
+        .show-on-desktop{
+            display: block;
+        }
+        .show-on-mobile{
+            display: none;
+        }
+  
+        main{
+        margin-bottom: 10vh;
+        width: 68%;
+
+        p{
+            font-size: 17px;
+            margin: 20px 0 20px 0;
+            text-align: left;
+        }
+
+        a{  
+            font-size: 17px;
+            margin: 20px 0 20px 0;
+            text-align: left;
+            font-weight: 550;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+        section{
+            margin: 10vh 0vh 10vh 0vh;
+        }
+
+        section.index-section{
+            @include flex-row();
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 15vh;
+            margin-bottom: 15vh;
+
+            h2 {
+                margin:0px;
+            }
+
+    
+            .index-section-text{
+                @include flex-column;
+                width: 40%;
+                align-items: flex-start;
+
+                p{
+                    margin-left: 0%;
+                }
+                button{
+                    margin-left: 0%;
+                }
+            }
+
+            .main-image {
+                width: 33%;
+            }
+          }
+            
+        .index-section:nth-of-type(2){
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+        } 
+        footer {
+            // width: 100vw;
+            @include flex-row;
+
+            .footer-wrapper {
+              width: 70vw;
+
+              .footer-socials-mobile {
+                display:none;
+              }
+              
+            
+              .subpages-contact-wrapper {
+
+                @include flex-row;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-top: 20px;
+
+                .footer-subpages {
+                  width: 120px;
+                  #footer-p {
+                    margin: 0px;
+                }
+                
+                }
+
+                .footer-contact {
+                  width: 120px;
+                  text-align:left;
+                  margin: 0px;
+
+                  p#footer-p{
+                    margin: 0px;
+                    }
+                
+                }
+
+                .footer-socials-desktop {
+                  width: 120px;
+                  @include flex-row;
+                  flex-wrap:wrap;
+                  justify-content: space-around;
+                  gap: 0px;
+
+                  .socials-image {
+                    width:50px;
+                  }
+                }
+              }
+
+              .copyright {
+                width: 300px;
+                margin: auto;
+                padding-top: 40px;
+              }
+
+            }
+          }
+        
+    }
+
+            
+            //footer
+
+
+    }
+
+@import "./_produkter.scss";
+@import "./_kontakt.scss";
+@import "./_recensioner.scss";
+@import "./_om_oss.scss";
+@import "./_nav.scss";

@@ -1,0 +1,117 @@
+//navigationsmeny
+.nav_wrapper {
+    background-color: #fff;
+    color: #3c3c3c;
+    padding: 10px 0;
+    box-sizing: border-box;
+    width: 100vw;
+    }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.cart{
+    padding-left: 20px;
+    i{
+        font-size: 24px;
+    }
+    a {
+        text-decoration: none;
+        color: $myTextColor;
+    }
+
+}
+
+/*Regler för mobil (default)*/
+
+.mobile-menu {
+    display: block;
+}
+
+.mobile-dropdown {
+    list-style: none;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 150px;
+    display: none;
+    border: 1px solid lightgrey;
+
+    a {
+        text-decoration: none;
+        color:$myTextColor;
+        }
+    li {
+    padding: 10px;
+    text-align: center;
+    }
+}
+
+//hamburgarmeny
+.hamburger {
+    display: flex;
+    cursor: pointer;
+}
+
+.hamburger i {
+    color:$myTextColor;
+    font-size: 24px;
+    margin-left: 20px;
+}
+/*Regler för desktop*/
+
+.desktop-menu {
+    display: none;
+    gap: 20px;
+    list-style: none;
+
+    li {
+        padding: 10px;
+        text-align: center;
+    }
+}
+/* class för ge aktiva sidan understrykning */
+li a.active {
+    text-decoration: underline;
+}
+
+/* hover för desktopnav*/
+.desktop-menu li:hover a {
+    text-decoration: none;
+    color:$myOrange;
+}
+
+/*media queries för nav, ska in med resten*/
+
+
+@media (min-width: 768px) {
+  .mobile-menu {
+        display: none;
+  }
+
+  .desktop-menu {
+        display: flex;
+        a {
+            text-decoration: none;
+        } 
+  }
+//döljer hamburgarmeny för desktop
+  .hamburger {
+        display: none;
+  }
+}

@@ -1,0 +1,44 @@
+@import "./_mixins_o_variabler.scss";
+  
+  //detta gäller produktsidan
+  #product-section{
+    @include flex-row();
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    gap: 2%;
+}
+
+.product-box {
+    position: relative;
+    width:7.5rem;
+    height: 21rem;
+    /*border-width: 4px;
+    border-style:solid;
+    border-image: linear-gradient($myLightPurple 1%, $myDarkPurple) 1; */
+    /*background-image:linear-gradient($myLightPurple 1%, $myDarkPurple); 
+    @include flex-column();*/
+    align-items: flex-start;
+    padding: 3%;
+    border-radius: 6px;
+    margin-bottom: 4%;
+    box-shadow: 0px 0px 3px 4px rgba(0,0,0, 0.08);
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    p, h3 {
+        text-align: left;
+    }
+
+    .product-image {
+        width: 100%;
+        border-radius: 200px;
+    }
+
+    button{
+        position: absolute;
+        bottom: 1px;
+        
+    }
+}

@@ -1,0 +1,18 @@
+@mixin flex-column() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  @mixin flex-row() {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  } 
+  
+  $myDarkPurple: #7B5C9A;
+  $myLightPurple: #E3DEF7; //gamla var #cdce75
+  $myPink: #E3AACA;
+  $myOrange: #FC976C;
+  $myTurquoise: #6DDAB9;
+  $myTextColor: #3C3C3C;

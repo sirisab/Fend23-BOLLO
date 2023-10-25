@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produkter</title>
+    <link rel="icon" type="image/png" href="bilder/bollo_favicon.png" />
+    <link rel="stylesheet" href="style.css" class="css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <script
+    src="https://kit.fontawesome.com/0991c05701.js"
+    crossorigin="anonymous">
+    </script>
+    <script>
+      function toggleMobileMenu() {
+        const mobileDropdown = document.querySelector(".mobile-dropdown");
+        mobileDropdown.style.display =
+          mobileDropdown.style.display === "none" ? "block" : "none";
+      }
+    </script>
+</head>
+<body>
+    <div class="nav_wrapper">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="bilder/bollo_logo_small.png" alt="Logo" /></a>
+        </div>
+        <div class="menu">
+          <ul class="desktop-menu">
+            <li><a href="index.html">Start</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="om_oss.html">Om oss</a></li>
+            <li><a href="produkter.html" class="active">Produkter</a></li>
+            <li><a href="recensioner.html">Recensioner</a></li>
+          </ul>
+          <div class="cart">
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+          <div class="mobile-menu">
+            <div class="hamburger" onclick="toggleMobileMenu()">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="mobile-dropdown">
+              <li><a href="index.html">Start</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+              <li><a href="om_oss.html">Om oss</a></li>
+              <li><a href="produkter.html" class="active">Produkter</a></li>
+              <li><a href="recensioner.html">Recensioner</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <header class="header-produkter">
+        <h1>Bollarna du behöver</h1>
+    </header>  
+
+    <main>
+
+        <section>
+            <h2>Våra bollar</h2>
+            <p>Utforska vårt utbud av exceptionella bollar. Hittar du inte vad du söker? <a href="kontakt.html">Kontakta oss!</a></p> 
+        </section>
+
+        <section id="product-section">
+            <article class="product-box">
+                <img src="bilder/boll_design_2.png" alt="Bild på Bollpaket start" class="product-image">
+                <h3>Bollpaket Start</h3>
+                <p>8 st bollar. Originalmaterial. 2000kr</p>
+                <button onclick="window.location.href='#';" >Beställ <i class="fa-solid fa-basket-shopping"></i>
+                </button>
+            </article>
+
+            <article class="product-box">
+                <img src="bilder/boll_design_3.png" alt="Bild på Bollpaket Baller" class="product-image">
+                <h3>Bollpaket Baller</h3>
+                <p>8 st bollar. Neongradient design. 2800kr</p>
+                <button onclick="window.location.href='#';" >Beställ <i class="fa-solid fa-basket-shopping"></i>
+                </button>
+            </article>
+
+            <article class="product-box">
+                <img src="bilder/boll_design_1.png" alt="Bild på Bollpaket Energy" class="product-image">
+                <h3>Bollpaket Energy</h3>
+                <p>8 st bollar. Neongradient design i halcyeon material. 3500kr</p>
+                <button onclick="window.location.href='#';" >Beställ <i class="fa-solid fa-basket-shopping"></i>
+                </button>
+            </article>
+
+            <article class="product-box">
+                <img src="bilder/boll_design_5.png" alt="Bild på Bollpaket Ambition" class="product-image">
+                <h3>Bollpaket Ambition</h3>
+                <p>10 st bollar. Tufft askorbinsyrebaserat material som håller för allt. 4000kr</p>
+                <button onclick="window.location.href='#';" >Beställ <i class="fa-solid fa-basket-shopping"></i>
+                </button>
+            </article>
+
+            <article class="product-box">
+                <img src="bilder/boll_design_2.png" alt="Bild på Bollpaket start" class="product-image">
+                <h3>Bollpaket Candid</h3>
+                <p>9 st bollar. Originalmaterial. 2200kr</p>
+                <button onclick="window.location.href='#';" >Beställ <i class="fa-solid fa-basket-shopping"></i>
+                </button>
+            </article>
+
+            <article class="product-box">
+                <img src="bilder/boll_design_3.png" alt="Bild på Bollpaket Baller" class="product-image">
+                <h3>Bollpaket Ghost</h3>
+                <p>8 st bollar. Skumbollar till spökboll. 2800kr</p>
+                <button onclick="window.location.href='#';" >Beställ <i class="fa-solid fa-basket-shopping"></i>
+                </button>
+            </article>
+
+            <article class="product-box">
+                <img src="bilder/boll_design_1.png" alt="Bild på Bollpaket Energy" class="product-image">
+                <h3>Bollpaket Spirit</h3>
+                <p>8 st bollar. Deluxe skumbollar till spökboll. 3500kr</p>
+                <button onclick="window.location.href='#';" >Beställ <i class="fa-solid fa-basket-shopping"></i>
+                </button>
+            </article>
+
+            <article class="product-box">
+                <img src="bilder/boll_design_5.png" alt="Bild på Bollpaket Tailor" class="product-image">
+                <h3>Bollpaket Tailor</h3>
+                <p>10 st bollar. Skräddarsy ditt eget paket. 5000kr</p>
+                <button onclick="window.location.href='#';" >Beställ <i class="fa-solid fa-basket-shopping"></i>
+                </button>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-wrapper">
+            <section class="footer-socials-mobile">
+                <a href="twitter.com"><img src="bilder/Twitter.png" alt="twitter-logo" class="socials-image"></a>
+                <a href="facebook.com"><img src="bilder/Facebook.png" alt="fb-logo" class="socials-image"></a>
+                <a href="instagram.com"><img src="bilder/Instagram.png" alt="instagram-logo" class="socials-image"></a>
+                <a href="tiktok.com"><img src="bilder/Tiktok.png" alt="tiktok-logo" class="socials-image"></a>
+            </section>
+            <section class="subpages-contact-wrapper">
+                <section class="footer-subpages">
+                    <a href="index.html">Start</a> 
+                    <a href="produkter.html">Produkter</a> 
+                    <a href="kontakt.html">Kontakt</a> 
+                    <a href="om_oss.html">Om oss</a> 
+                    <a href="recensioner.html">Recensioner</a>
+                </section>
+                <section class="footer-contact">
+                    <p id="footer-p">info@bollo.se <br />
+                    +46 123 45 67 <br /><br />
+                    Bollvägen 12 <br />
+                    113 42 Bollnäs</p>
+                </section>
+                <section class="footer-socials-desktop">
+                  <a href="twitter.com"><img src="bilder/Twitter.png" alt="twitter-logo" class="socials-image"></a>
+                  <a href="facebook.com"><img src="bilder/Facebook.png" alt="fb-logo" class="socials-image"></a>
+                  <a href="instagram.com"><img src="bilder/Instagram.png" alt="instagram-logo" class="socials-image"></a>
+                  <a href="tiktok.com"><img src="bilder/Tiktok.png" alt="tiktok-logo" class="socials-image"></a>
+                </section>
+            </section>  
+            <section class="copyright">
+                <p>
+                    © 2023 Bollo Sverige AB. Bollnäs, Sweden. <br />
+                    All rights reserved.
+                </p>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
