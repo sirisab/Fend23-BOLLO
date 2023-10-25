@@ -99,16 +99,23 @@ body .header-om_oss {
 }
 @media (min-width: 612px) {
   body .header-om_oss {
-    background-image: url("bilder/jacob-mejicanos-qyUFVIP3fwk-unsplash.jpg");
-    background-position: center top -150px;
+    background-position: center top -500px;
+    background-size: auto;
   }
 }
 body .header-produkter {
-  background-image: url("bilder/stainless-images-RUgbGfdma6U-unsplash.jpg");
+  background-image: url("bilder/barn-i-rullstol.jpg");
+  background-size: cover;
+}
+@media (min-width: 612px) {
+  body .header-produkter {
+    background-size: auto;
+    background-position: center top -250px;
+  }
 }
 body .header-recensioner {
   background-image: url("bilder/ahmed-zayan-ABUWC-0a7_A-unsplash.jpeg");
-  background-position: right 30% bottom;
+  background-position: left bottom;
   background-size: cover;
 }
 @media (min-width: 612px) {
@@ -131,7 +138,7 @@ body main section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 30px 0 30px 0;
+  margin: 4vh 0 4vh 0;
 }
 body main .index-section, body main .index-section-text {
   align-items: center;
@@ -601,13 +608,13 @@ label {
 
 .mobile-dropdown {
   list-style: none;
-  background-color: #fff;
+  background-color: #E3DEF7;
   position: absolute;
-  top: 60px;
+  top: 71px;
   right: 0;
   width: 150px;
   display: none;
-  border: 1px solid lightgrey;
+  border: 1px solid #D9D9D9;
 }
 .mobile-dropdown a {
   text-decoration: none;
