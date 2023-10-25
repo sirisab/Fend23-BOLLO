@@ -15,6 +15,8 @@ body h1 {
   margin: 0px 18px 0px 0px;
   width: 80%;
   letter-spacing: 0.45rem;
+  -webkit-backdrop-filter: 10px;
+          backdrop-filter: 10px;
 }
 body h2, body h3, body h4 {
   font-family: "Righteous", sans-serif;
@@ -126,7 +128,7 @@ body main section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 4vh 0 4vh 0;
+  margin: 20px 0 20px 0;
 }
 body main .index-section, body main .index-section-text {
   align-items: center;
@@ -596,13 +598,13 @@ label {
 
 .mobile-dropdown {
   list-style: none;
-  background-color: #fff;
+  background-color: #E3DEF7;
   position: absolute;
   top: 60px;
   right: 0;
   width: 150px;
   display: none;
-  border: 1px solid lightgrey;
+  border: 1px solid #D9D9D9;
 }
 .mobile-dropdown a {
   text-decoration: none;
@@ -643,7 +645,7 @@ li a.active {
 /* hover för desktopnav*/
 .desktop-menu li:hover a {
   text-decoration: none;
-  color: #FC976C;
+  color: #7B5C9A;
 }
 
 /*media queries för nav, ska in med resten*/
