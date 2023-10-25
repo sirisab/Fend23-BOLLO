@@ -190,6 +190,9 @@ body footer .copyright {
   text-align: center;
   line-height: 21px;
 }
+body footer .copyright .footer-logga {
+  width: 50px;
+}
 
 @media (min-width: 612px) {
   body h1 {
@@ -314,6 +317,9 @@ body footer .copyright {
     width: 300px;
     margin: auto;
     padding-top: 40px;
+  }
+  body footer .footer-wrapper .copyright .footer-logga {
+    width: 50px;
   }
 }
 #product-section {
