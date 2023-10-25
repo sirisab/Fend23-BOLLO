@@ -8,7 +8,7 @@ body{
     margin: 0px;
     @include flex-column();
     
-    
+     
     // Har organiserat så att sådant som gäller hela sidan och återkommande element tex textstyling och knappar kommer först här, och det som rör specifika sektioner samt layout kommer efteråt. Media queries för desktop längst ner. /SL
     
     h1 {
@@ -20,6 +20,7 @@ body{
         margin: 0px 18px 0px 0px;
         width: 80%;
         letter-spacing: 0.45rem;
+        backdrop-filter: (10px);
         }
 
     h2, h3, h4 {
@@ -143,7 +144,7 @@ body{
           
           section{
               @include flex-column;
-              margin: 4vh 0 4vh 0;
+              margin: 20px 0 20px 0;
 
           }
           
