@@ -7,7 +7,7 @@ body{
     width:100vw;
     margin: 0px;
     @include flex-column();
-    
+     
      
     // Har organiserat så att sådant som gäller hela sidan och återkommande element tex textstyling och knappar kommer först här, och det som rör specifika sektioner samt layout kommer efteråt. Media queries för desktop längst ner. /SL
     
