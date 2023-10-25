@@ -596,13 +596,13 @@ label {
 
 .mobile-dropdown {
   list-style: none;
-  background-color: #fff;
+  background-color: #E3DEF7;
   position: absolute;
   top: 60px;
   right: 0;
   width: 150px;
   display: none;
-  border: 1px solid lightgrey;
+  border: 1px solid #D9D9D9;
 }
 .mobile-dropdown a {
   text-decoration: none;
