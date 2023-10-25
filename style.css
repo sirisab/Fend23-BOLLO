@@ -97,12 +97,18 @@ body .header-om_oss {
 }
 @media (min-width: 612px) {
   body .header-om_oss {
-    background-image: url("bilder/jacob-mejicanos-qyUFVIP3fwk-unsplash.jpg");
-    background-position: center top -150px;
+    background-position: center top -500px;
+    background-size: auto;
   }
 }
 body .header-produkter {
   background-image: url("bilder/killar-med-boll.jpg");
+  background-size: auto;
+}
+@media (min-width: 612px) {
+  body .header-produkter {
+    background-position: center top -150px;
+  }
 }
 body .header-recensioner {
   background-image: url("bilder/ahmed-zayan-ABUWC-0a7_A-unsplash.jpeg");

@@ -114,13 +114,17 @@ body{
           background-position: left -15px bottom;
           background-size: cover;
           @media (min-width: 612px){
-            background-image: url("bilder/jacob-mejicanos-qyUFVIP3fwk-unsplash.jpg");
-            background-position: center top -150px;
+            background-position: center top -500px;
+            background-size:auto;
           }
       }
   
       .header-produkter {
           background-image: url("bilder/killar-med-boll.jpg");
+          background-size: auto;
+          @media (min-width: 612px){
+            background-position: center top -150px;
+          }
       }
       
       .header-recensioner {
