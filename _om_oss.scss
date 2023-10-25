@@ -7,6 +7,11 @@
     width: 100%;
     flex-direction: column;
     box-sizing: border-box;
+
+    section{
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
   }
 
 // Anställda
@@ -23,6 +28,11 @@
     {
         width: 100%;
         display: flex;
+
+        .worker{
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        }
     }
     
     .worker{
