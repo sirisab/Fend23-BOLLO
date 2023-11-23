@@ -111,7 +111,7 @@ body{
   
       .header-om_oss {
           background-image: url("bilder/jacob-mejicanos-qyUFVIP3fwk-unsplash.jpg");
-          background-position: left -15px bottom;
+          background-position: left -35px bottom;
           background-size: cover;
           @media (min-width: 612px){
             background-position: center top -500px;
@@ -121,7 +121,8 @@ body{
   
       .header-produkter {
           background-image: url("bilder/barn-i-rullstol.jpg");
-          background-size: cover;
+          background-position: left -125px bottom ;
+          background-size:220%;
           @media (min-width: 612px){
             background-size: auto;
             background-position: center top -250px;
