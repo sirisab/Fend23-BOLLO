@@ -9,7 +9,7 @@
     box-sizing: border-box;
 
     section{
-        margin-top: 0vh;
+        margin-top: 5vh;
         margin-bottom: 5vh;
     }
   }
@@ -21,17 +21,18 @@
         height: 100%;
         border-radius: 50%;
         object-fit: cover;
+        padding: 20px;
     }
     
     .meet_container
     {
         width: 100%;
         display: flex;
-        margin-top: 5vh;
+        margin-top: 10vh;
         margin-bottom: 0;
 
         .worker{
-        margin-top: 0vh;
+        margin-top: 5vh;
         margin-bottom: 10vh;
         }
     }
@@ -71,3 +72,4 @@
     }
 
 }
+
