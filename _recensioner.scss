@@ -8,6 +8,7 @@
 
 .reviews-wrapper {
   @include flex-column;
+  gap: 10px;
 
   .reviews-background:nth-of-type(odd) {
     background: $myOrange;
@@ -20,6 +21,7 @@
       @include flex-column;
       justify-content: center;
       align-items: center;
+
 
       .reviews-ball-icons {
         @include flex-row;
