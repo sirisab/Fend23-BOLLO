@@ -121,7 +121,7 @@ body{
   
       .header-produkter {
           background-image: url("bilder/barn-i-rullstol.jpg");
-          background-position: left -125px bottom ;
+          background-position: left -225px bottom -150px;
           background-size:220%;
           @media (min-width: 612px){
             background-size: auto;
