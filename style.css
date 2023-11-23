@@ -621,7 +621,7 @@ label {
   position: absolute;
   top: 71px;
   right: 0;
-  width: 150px;
+  width: 140px;
   display: none;
   border: 1px solid #D9D9D9;
 }
@@ -631,7 +631,7 @@ label {
 }
 .mobile-dropdown li {
   padding: 10px;
-  text-align: center;
+  text-align: left;
 }
 
 .hamburger {
